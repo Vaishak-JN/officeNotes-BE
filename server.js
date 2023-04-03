@@ -19,8 +19,8 @@ connectDB()
 app.use(logger)
 
 //evrything available to public
-app.use(cors())
-// app.use(cors(corsOptions))
+// app.use(cors())
+app.use(cors(corsOptions))
 
 //built-in middleware for json
 app.use(express.json())
